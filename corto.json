@@ -1,0 +1,60 @@
+{
+  "tienda": {
+    "nombre": "TechStore",
+    "pais": "Bolivia",
+    "direccion": {
+      "ciudad": "La Paz",
+      "zona": "Sopocachi"
+    },
+    "productos": [
+      {
+        "id": 1,
+        "nombre": "Laptop Pro",
+        "precio": 1200,
+        "categoria": "computadoras",
+        "stock": {
+          "cantidad": 15,
+          "almacen": "Central"
+        },
+        "especificaciones": {
+          "ram": "16GB",
+          "cpu": "Intel i7",
+          "disco": {
+            "tipo": "SSD",
+            "capacidad": "512GB"
+          }
+        }
+      },
+      {
+        "id": 2,
+        "nombre": "Mouse Gamer",
+        "precio": 45,
+        "categoria": "accesorios",
+        "stock": {
+          "cantidad": 50,
+          "almacen": "Norte"
+        },
+        "especificaciones": {
+          "dpi": 16000,
+          "conexion": ["USB", "Bluetooth"]
+        }
+      }
+    ],
+    "clientes": [
+      {
+        "id": 101,
+        "nombre": "Carlos",
+        "contacto": {
+          "email": "carlos@example.com",
+          "telefono": "70000000"
+        },
+        "compras": [
+          {
+            "producto_id": 1,
+            "cantidad": 2
+          }
+        ]
+      }
+    ]
+  }
+}

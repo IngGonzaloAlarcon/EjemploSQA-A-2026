@@ -1,0 +1,238 @@
+{
+  "empresa": {
+    "id": 1001,
+    "nombre": "NovaTech",
+    "pais": "Bolivia",
+    "fundacion": 2018,
+    "activa": true,
+    "direccion": {
+      "calle": "Av. Arce",
+      "numero": 2450,
+      "ciudad": "La Paz",
+      "codigo_postal": "0001",
+      "coordenadas": {
+        "latitud": -16.5000,
+        "longitud": -68.1500
+      }
+    },
+    "contacto": {
+      "email": "contacto@novatech.com",
+      "telefono": "+591 70000000",
+      "redes": {
+        "web": "https://novatech.example",
+        "linkedin": "novatech",
+        "twitter": "novatech"
+      }
+    }
+  },
+  "departamentos": [
+    {
+      "id": 1,
+      "nombre": "Tecnología",
+      "presupuesto": 150000,
+      "empleados": [
+        {
+          "id": 101,
+          "nombre": "Ana",
+          "apellido": "Gómez",
+          "edad": 29,
+          "puesto": "Backend Developer",
+          "salario": 3200,
+          "activo": true,
+          "habilidades": [
+            "JavaScript",
+            "Node.js",
+            "PostgreSQL"
+          ],
+          "proyectos": [
+            {
+              "nombre": "API Central",
+              "estado": "activo",
+              "horas": 120
+            },
+            {
+              "nombre": "Migración DB",
+              "estado": "completado",
+              "horas": 80
+            }
+          ]
+        },
+        {
+          "id": 102,
+          "nombre": "Carlos",
+          "apellido": "Mendoza",
+          "edad": 35,
+          "puesto": "DevOps Engineer",
+          "salario": 4100,
+          "activo": true,
+          "habilidades": [
+            "Docker",
+            "Kubernetes",
+            "AWS"
+          ],
+          "proyectos": [
+            {
+              "nombre": "Cloud Migration",
+              "estado": "activo",
+              "horas": 200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Marketing",
+      "presupuesto": 85000,
+      "empleados": [
+        {
+          "id": 201,
+          "nombre": "Lucía",
+          "apellido": "Fernández",
+          "edad": 27,
+          "puesto": "Marketing Manager",
+          "salario": 2800,
+          "activo": true,
+          "habilidades": [
+            "SEO",
+            "Publicidad",
+            "Analytics"
+          ],
+          "campanas": [
+            {
+              "nombre": "Lanzamiento 2026",
+              "presupuesto": 15000,
+              "canales": [
+                "Google Ads",
+                "Instagram",
+                "YouTube"
+              ],
+              "metricas": {
+                "impresiones": 250000,
+                "clics": 12500,
+                "conversiones": 850
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "productos": [
+    {
+      "id": "P001",
+      "nombre": "NovaCloud",
+      "categoria": "Software",
+      "precio": 49.99,
+      "moneda": "USD",
+      "stock": 500,
+      "tags": [
+        "cloud",
+        "saas",
+        "productividad"
+      ],
+      "especificaciones": {
+        "usuarios_maximos": 100,
+        "almacenamiento_gb": 500,
+        "soporte": {
+          "email": true,
+          "chat": true,
+          "telefono": false
+        }
+      },
+      "valoraciones": [
+        {
+          "usuario": "user001",
+          "puntuacion": 5,
+          "comentario": "Excelente producto"
+        },
+        {
+          "usuario": "user002",
+          "puntuacion": 4,
+          "comentario": "Muy fácil de usar"
+        }
+      ]
+    },
+    {
+      "id": "P002",
+      "nombre": "NovaAnalytics",
+      "categoria": "Analítica",
+      "precio": 79.99,
+      "moneda": "USD",
+      "stock": 250,
+      "tags": [
+        "analytics",
+        "business-intelligence",
+        "reportes"
+      ],
+      "especificaciones": {
+        "usuarios_maximos": 50,
+        "almacenamiento_gb": 1000,
+        "soporte": {
+          "email": true,
+          "chat": true,
+          "telefono": true
+        }
+      }
+    }
+  ],
+  "proyectos": [
+    {
+      "id": "PR001",
+      "nombre": "Portal Cliente",
+      "estado": "en progreso",
+      "prioridad": "alta",
+      "fecha_inicio": "2026-01-15",
+      "cliente": {
+        "id": "C001",
+        "nombre": "Andes Corp",
+        "pais": "Bolivia",
+        "contacto": {
+          "nombre": "Roberto Silva",
+          "email": "roberto@andescorp.example"
+        }
+      },
+      "equipo": [101, 102],
+      "tecnologias": [
+        "React",
+        "Node.js",
+        "PostgreSQL"
+      ],
+      "tareas": [
+        {
+          "id": "T001",
+          "titulo": "Diseñar API",
+          "completada": true,
+          "responsable": 101
+        },
+        {
+          "id": "T002",
+          "titulo": "Configurar CI/CD",
+          "completada": false,
+          "responsable": 102
+        }
+      ]
+    }
+  ],
+  "configuracion": {
+    "idiomas": [
+      "es",
+      "en"
+    ],
+    "notificaciones": {
+      "email": true,
+      "sms": false,
+      "push": true
+    },
+    "seguridad": {
+      "2fa": true,
+      "sesiones_maximas": 3,
+      "politicas_password": {
+        "longitud_minima": 12,
+        "requiere_mayuscula": true,
+        "requiere_numero": true,
+        "requiere_simbolo": true
+      }
+    }
+  }
+}
